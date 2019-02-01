@@ -1,0 +1,51 @@
+a) Counting objects: 100% (7/7), done.
+   Delta compression using up to 4 threads
+   Compressing objects: 100% (3/3), done.
+   Writing objects: 100% (4/4), 437 bytes | 457.00 KiB/s, done.
+   Total 4 (delta 1), reused 0 (delta 0)
+   remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+   To https://github.com/JustinRichman/Assignment1.git
+      bbfa933..39dc044  master -> master
+
+b) Using "$ git rev-list --all --count" I found that there was 5 commits done
+or ""$ git shortlog" can do this as well with more detail.
+Javier Escobar-Avila (2):
+      First version of the RoleGame prototype.
+      Main method changed
+
+Justin Richman (3):
+      Updated information files
+      Git status from console after committing README
+      Added file answers.txt
+
+c) Using "$git log .gitignore" I was able to see the date the file was last modified was Thu Jan 10 16:45:38 2019
+
+d) One good reason why git repositories use branching is so multiple programmers can work on different parts of an
+feature without messing with the others code or even while working on the same exact feature. Another reason for branching
+is so other programmers can also work on bug fixes while not interfering with what everyone else may be working on.
+
+e) Git log shows a history of the commits made with some information about them while git status shows what files are
+currently modified in the current working directory and if they are staged for commit or not.
+
+f) Using "$git log Weapon.h" we can see all the commit that were made of this file.
+
+g) Using "$git log --grep=file" will show all the files that have used the word "file" in the commit message
+
+h) In respect to object oriented programming, inheritance is when there is base class or parent class and sub classes or
+children classes can be created which will inherit properties like functions and member data from the parent class, while
+being able to add new properties.
+Polymorphism is when there can be a generic class which can branch into other classes that can define the functions of the
+parent class as they fit. For example, a generic car class and then other classes come from that like Ford or Tesla with
+having functionalities of a car can make them how they want.
+Encapsulation is used to protect and hide member data of classes that are not meant to be messed with by other people using
+the class. This is common practice, where in C++ you can put member data under Public, Protected, or Private each having
+its own sort of privacy and ability to use it.
+
+i) The main difference between "Dictator and Lieutenants” and "Integration management" workflow is that Lieutenants
+serve as an extra checkpoint to integrate code while both have their own "dictator". The integration manager and dictator
+serve similar a purpose but Lieutenants have an extra pass to check for conflicts.
+
+j) A team of 100 developers would benefit more from the Dictator and Lieutenants workflow because there won't be as much
+pressure when merging work and testing work together. With having two Lieutenants monitoring the bugs and merges is
+less of an hassle than having just one integration manager, that manager would have a hard time managing 100 developers
+code.
