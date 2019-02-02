@@ -21,5 +21,8 @@
 
      damage = hitpoints - (armor - randArmor);
 
+     if (damage < 0) {
+         return 0;
+     }
      return damage;
  }
