@@ -8,14 +8,14 @@
  #include <string>
  #include "Weapon.h"
 
- #ifndef ZANPAKUTO_H
- #define ZANPAKUTO_H
+ #ifndef ZAMPAKUTO_H
+ #define ZAMPAKUTO_H
 
  /**
   * Defines the behavior of a zanpakuto (hitpoint = 60, ignores half of all armor)
   *
   */
- class Zanpakuto : public Weapon {
+ class Zampakuto : public Weapon {
  public:
 
      Zampakuto() : Weapon("Zampakuto", 60.0) { //Calls Weapon(name, hitpoints) constructor with values Zampakuto and 60.0
