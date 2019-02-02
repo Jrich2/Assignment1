@@ -8,8 +8,8 @@
  #include <string>
  #include "Weapon.h"
 
- #ifndef ZANPAKUTO_H
- #define ZANPAKUTO_H
+ #ifndef ZAMPAKUTO_H
+ #define ZAMPAKUTO_H
 
  /**
   * Defines the behavior of a zanpakuto (hitpoint = 60, ignores half of all armor)
