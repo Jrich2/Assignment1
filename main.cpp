@@ -47,5 +47,9 @@ int main(int argc, char** argv) {
     simulateWeapon(weapon, armor);
     delete(weapon);
 
+    weapon = WeaponFactory::getInstance()->getWeapon("Zampakuto");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
     return 0;
 }
