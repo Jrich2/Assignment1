@@ -6,7 +6,9 @@
  */
 
  #include <string>
- #include <cstdlib>    /* srand, rand */
+ #include <cmath>
+ #include <cstdlib>     /* srand, rand */
+ #include <ctime>       /* time */
  #include "Weapon.h"
 
  #ifndef CRAZYRANDOMSWORD_H
@@ -20,13 +22,18 @@ the armor the weapon hits.)
  class CrazyRandomSword : public Weapon {
  public:
 
-     CrazyRandomSword() : Weapon("Crazy random sword", rand() % 94 + 7) { //Calls Weapon(name, hitpoints) constructor with values Crazy random sword and random int
+     CrazyRandomSword() : Weapon("Crazy random sword", getHit()) { //Calls Weapon(name, hitpoints) constructor with values Crazy random sword and random int
      }           //rand() % 94 + 7 get random num from 7 - 100
 
      virtual ~CrazyRandomSword() {};
 
      virtual double hit(double armor);
 
+ private:
+      int getHit(){   //Use this funct to get rand # 7 - 100 into the constructor
+           srand (time(NULL));
+           return rand() % 94 + 7;
+      }
  };
 
  #endif /* CRAZYRANDOMSWORD_H */

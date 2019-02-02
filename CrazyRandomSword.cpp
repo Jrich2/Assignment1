@@ -7,16 +7,14 @@
 
  #include "CrazyRandomSword.h"
  #include <cmath>
- #include <cstdlib>     /* srand, rand */
- #include <ctime>       /* time */
-
 
  double CrazyRandomSword::hit(double armor) {
      double damage = 0;
      srand (time(NULL));
 
      //int r = rand() % 94 + 7; //Get random hitpoints between 7 - 100
-     int randArmor = floor(armor / 3);   //Get most random armor can be
+     double OneThird = floor(armor / 3);   //Get most random armor can be
+     int randArmor = (int)OneThird;
      randArmor = rand() % (randArmor - 1) + 2;     //Random number from 2 to 1/3 the armor
 
      damage = hitPoints - (armor - randArmor);
