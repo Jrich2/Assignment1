@@ -49,3 +49,9 @@ j) A team of 100 developers would benefit more from the Dictator and Lieutenants
 pressure when merging work and testing work together. With having two Lieutenants monitoring the bugs and merges is
 less of an hassle than having just one integration manager, that manager would have a hard time managing 100 developers
 code.
+
+RoleGame OOP principles:
+The RoleGame prototype uses Polymorphism because all the weapon classes we made are subclasses of the parent class Weapons.
+There can be a countless amount of classes that inherit the properties of the Weapon class and work in their own unique ways
+with the same core properties. The RoleGame prototype also uses Encapsulation with the Weapon class, it uses "Protected" for
+the member data. 
